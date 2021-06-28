@@ -426,31 +426,12 @@ img {vertical-align: middle;}
       </nav>
            
       <!-- nav-bar end -->    
-<div class="containertable">
+<form name="reg_form" action="insert.php" method="post">
         <table class="table" id="form">
             <tr>
-                <td align="right">
-                    Name:
-                </td>
-                <td >
-                    <input type="text" id="name" placeholder="Name">
-                
-                </td>
-            </tr>
-
-            <tr>
-                <td align="right" id="dob">
-                    Date of Birth:
-                </td>
-                <td>
-                    <input type="date" id="date">
-                </td>
-            </tr> 
-
-            <tr>
-                <td align="right">Why do you want to start a fundraiser:</td>
-                <td><select name="reason" id="type">
-                    <option value="Medical Treatment">Medical</option>
+                <td align="right">Purpose of raising funds:</td>
+                <td><select name="reason" name="type">
+                    <option value="Medical Treatment">Medical Treatment</option>
                     <option value="Creative Idea">Creative Idea</option>
                     <option value="Charity/NGO">Charity/NGO</option>
                     <option value="Other Reason">Other Reason</option>
@@ -458,23 +439,54 @@ img {vertical-align: middle;}
             </tr>
 
             <tr>
-                <td align="right">Reason for fundraising:</td>
-                <td><input type="text" id="reason" placeholder="Please enter a desprictive reason"></td>
+                <td align="right">
+                    This fund raise will help:
+                </td>
+                <td >
+                    <input type="text" name="beneficiary" placeholder="Benificiary person/community">
+                
+                </td>
             </tr>
-            
+
+
             <tr>
-                <td align="right">Email:</td>
-                <td><input id="email" type="email" placeholder="Enter your email here"></td>
+                <td align="right">
+                    Initiated by:
+                </td>
+                <td >
+                    <input type="text" name="Initiater" placeholder="Name of Initiater">
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Email ID:</td>
+                <td><input name="Email" type="email" placeholder="Enter your email"></td>
             </tr>
 
             <tr>
                 <td align="right">Phone Number:</td>
-                <td><input type="number" placeholder="Enter your Phone no. here."
+                <td><input type="number" name="Phone" placeholder="Enter your Phone no.">
             </tr>
 
             <tr>
+                <td align="right">
+                    Name your fundraiser:
+                </td>
+                <td >
+                    <input type="text" name="Fundraiser_Name" placeholder="Eg Help Aman fight cancer">
+                
+                </td>
+            </tr>
+            
+            <tr>
+                <td align="right">Reason for fundraising:</td>
+                <td><input type="text" name='Description' placeholder="Story or description"></td>
+            </tr>
+            
+            <tr>
                 <td align="right">Target(in ₹)</td>
-                <td><input type="number" id="target" placeholder="Enter amount you want to raise"></td>
+                <td><input type="number" name="Target" placeholder="Enter amount to be raised"></td>
             </tr>
             
             <tr>
@@ -482,16 +494,16 @@ img {vertical-align: middle;}
                     End Date:
                 </td>
                 <td>
-                    <input type="date" id="endDate">
+                    <input type="date" name="End_Date">
                 </td>
             </tr> 
             
             <tr>
-                <td align="right" ><button id="sButton" >Save</button></td>
+                <td align="right" ><button name="saveB" >Register</button></td>
                 <td> </td>
             </tr>
         </table>
-        </div>
+    </form>
     <!--footer start-->
  
     <div class="footer-dark">
@@ -552,7 +564,7 @@ img {vertical-align: middle;}
                 
                 
                 
-                
+            
                 
                 
                 
